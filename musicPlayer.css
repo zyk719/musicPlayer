@@ -1,0 +1,456 @@
+/* 布局 */
+
+/* 最外边框 */
+.musicPlayer-area {
+    margin: 0 auto;
+    text-align: center;
+    width: 462px;
+    height: 400px;
+    border: 2px green solid;
+    border-radius: 5px;
+    background-color: rgba(225, 225, 225, 1);
+}
+
+.musicPlayer-area::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.icon-image {
+    /* display: inline-block; */
+    width: 20px;
+    height: 20px;
+}
+
+.input-box {
+    width: 150px;
+    height: 20px;
+    font-size: 12px;
+    color: black;
+    margin: 0 auto;
+    text-align: center;
+    border: black 0.5px solid;
+    border-radius: 18px;
+    background-color: rgba(250, 250, 250, 0.7);
+}
+
+/* 左边区域 */
+.left-area {
+    float: left;
+    display: inline-block;
+    position: relative;
+    /* outline: 2px green solid; */
+    width: 180px;
+    height: 400px;
+}
+
+.user-box {
+    display: none;
+}
+.user-box-active {
+    display: block;
+}
+
+/* 用户信息框 */
+.uesr-information {
+    /* outline: 2px green dashed; */
+    width: 100%;
+    height: 165px;
+    position: relative;
+}
+
+
+/* 登陆完成界面 */
+.user-pic {
+    position: relative;
+    border: 1px solid black;
+    width: 99px;
+    height: 99px;
+    border-radius: 50%;
+    top: 15px;
+}
+
+#id-button-exit {
+    position: absolute;
+    border: none;
+    background-color: none;
+    right: 0px;
+    top: 0px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+#id-span-uesrName {
+    position: absolute;
+    top: 125px;
+    right: 52px;
+    font-size: 13px;
+    cursor: default;
+}
+
+
+/* 登陆界面 */
+#id-button-signin {
+    width: 50px;
+    height: 26px;
+    left: 35px;
+    border: 0.5px black solid;
+    border-radius: 3px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#id-button-signup {
+    width: 50px;
+    height: 26px;
+    right: 35px;
+    border: 0.5px black solid;
+    border-radius: 3px;
+    cursor: not-allowed;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+/* 账户密码输入界面 */
+.input-box::placeholder {
+    font-size: 12px;
+    color: gray;
+}
+
+#id-input-phoneNum {
+    position: absolute;
+    top: 25%;
+    transform: translateY(-50%);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#id-input-password {
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#id-button-submit {
+    width: 50px;
+    height: 26px;
+    border: 0.5px black solid;
+    border-radius: 3px;
+    cursor: pointer;
+    position: absolute;
+    top: 65%;
+    transform: translateY(-50%);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.img-phoneNum {
+    position: absolute;
+    top: 26%;
+    transform: translateY(-50%);
+    left: 16%;
+    transform: translateX(-50%);
+}
+
+.img-password {
+    position: absolute;
+    top: 45.5%;
+    transform: translateY(-50%);
+    left: 16%;
+    transform: translateX(-50%);
+}
+
+
+
+/* 音乐选择框 */
+.music-selector {
+    width: 100%;
+    height: 100px;
+    position: relative;
+    border-top: 1px gray solid;
+}
+.music-selector-child  {
+    position: relative;
+    height: 50%;
+}
+
+#id-input-search {
+    width: 150px;
+    position: absolute;
+    left: 8%;
+    top: 15%;
+    /* transform: translateY(-50%); */
+}
+
+#id-img-search {
+    position: absolute;
+    left: 79%;
+    top: 18%;
+    cursor: pointer;
+}
+
+
+.img-ilike {
+    position: absolute;
+    left: 20%;
+    top: 5%;
+    transform: translateY(-50%);
+}
+
+.img-collection {
+    width: 19px;
+    height: 19px;
+    position: absolute;
+    left: 20%;
+    bottom: 1%;
+    transform: translateY(-50%);
+}
+
+.ilike-selector-button {
+    position: absolute;
+    left: 35%;
+    top: 5%;
+    transform: translateY(-50%);
+    font-family: sans-serif;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.collection-selector-button {
+    position: absolute;
+    left: 35%;
+    bottom: 6%;
+    transform: translateY(-50%);
+    font-family: sans-serif;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+
+.play-area {
+    width: 100%;
+    height: 135px;
+    position: relative;
+    border-top: 1px gray solid;
+}
+
+
+
+audio {
+    width: 100%;
+    position: absolute;
+    bottom: 5%;
+    left: 0px;
+    background-color: rgba(225, 225, 225, 1);
+}
+
+audio .play {
+    background-color: red;
+}
+
+.img-play {
+    position: absolute;
+    top: 15px;
+    left: 58px;
+    width: 66px;
+    height: 66px;
+    cursor: pointer;
+    display: none;
+}
+
+.img-pause {
+    position: absolute;
+    top: 15px;
+    left: 58px;
+    width: 66px;
+    height: 66px;
+    cursor: pointer;
+    display: none;
+}
+
+.img-active {
+    display: inline-block;
+    opacity: 0.6;
+}
+
+.img-up {
+    position: absolute;
+    top: 33px;
+    left: 25px;
+    width: 35px;
+    height: 35px;
+    opacity: 0.6;
+}
+
+.img-down {
+    position: absolute;
+    top: 33px;
+    right: 25px;
+    width: 35px;
+    height: 35px;
+    opacity: 0.6;
+}
+
+.img-lyric {
+    position: absolute;
+    right: 0px;
+    opacity: 0.6;
+}
+
+
+.right-area {
+    float: right;
+    position: relative;
+    border-left: 1px gray solid;
+    /* outline: 1px blue solid; */
+    width: 280px;
+    height: 400px;
+}
+
+.detail-area {
+    display: none;
+}
+
+.detail-area-active {
+    position: relative;
+    left: 1%;
+    top: 1%;
+    width: 98%;
+    height: 98%;
+    /* outline: 2px blue solid; */
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: block;
+}
+
+.result-display-cell {
+    margin: 2px 2px 2px 2px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 92%
+}
+
+ol {
+    padding-left: 20px;
+}
+
+ol li {
+    font-size: 11px;
+    margin: 3px 0px 3px 0px;
+ }
+
+ .music-name {
+     font-size: 12px;
+     display: inline-block;
+     float: left;
+     padding-left: 10px;
+     width: 95px;
+     margin: 0 auto;
+     text-align: left;
+     padding-left: 15px;
+ }
+
+ .music-singer {
+     font-size: 12px;
+     display: inline-block;
+ }
+
+ .name-title {
+     padding-left: 35px;
+     width: 85px;
+     position: relative;
+ }
+
+.signer-title {
+    position: relative;
+    bottom: 4px;
+}
+
+#id-div-lyric {
+    position: relative;
+    /* border: 1px red solid; */
+    width: 256px;
+    height: 300px;
+    top: 45px;
+}
+
+.lyric-list {
+    display: block;
+    font-size: 12px;
+    height: 25px;
+}
+
+.img-lyricbox {
+
+}
+
+.music-play {
+    cursor: pointer;
+}
+
+.color-active {
+    color: red;
+}
+
+.color-active1 {
+    opacity: 0.3;
+}
+
+.color-active2 {
+    opacity: 0.6;
+}
+
+
+
+/* 播放进度条 */
+.progress-box {
+    position: relative;
+    /* outline: 1px solid blue; */
+    width: 125px;
+    height: 12px;
+    top: 85px;
+    left: 25px;
+}
+.progress-border {
+    height: 10px;
+    width: 110px;
+    border: black 1px solid;
+    border-radius: 5px;
+    background-color: rgba(250, 250, 250, 0.7);
+}
+.progress-bar {
+    width: 122px;
+    height: 10px;
+    display: flex;
+    flex-direction: row;
+    /* outline: 1px solid red; */
+    position: absolute;
+    top: 1px;
+    left: 1px;
+}
+.progress-content {
+    background-color: gray;
+    width:0px;
+    height: 10px;
+    border-radius: 4px;
+    display: inline-block;
+}
+.progress-btn {
+    width: 16px;
+    height: 16px;
+    background-color: gray;
+    border: 1px solid white;
+    border-radius: 50%;
+    position: relative;
+    left: -9px;
+    top: -4px;
+    cursor: pointer;
+}

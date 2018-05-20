@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>musicPlayer</title>
+        <link rel="stylesheet" href="./musicPlayer.css">
+    </head>
+    <body>
+        <div class="musicPlayer-area">
+            <div class="left-area">
+
+                <div class="uesr-information">
+                    <div class="user-box user-box-active user-box-0" >
+                        <img class="user-pic" id="id-image-user" src="" alt="">
+                        <button id="id-button-exit">注销</button>
+                        <br>
+                        <span id="id-span-uesrName"></span>
+                    </div>
+                    <div class="user-box user-box-1">
+                        <button id="id-button-signin">登入</button>
+                        <button id="id-button-signup">注册</button>
+                    </div>
+                    <div class="user-box user-box-2">
+                        <input class="input-box" id="id-input-phoneNum" type="text" placeholder="请输入账号">
+                        <img class="icon-image img-phoneNum" src="./static/imgs/people.png" alt="头像">
+                        <input class="input-box" id="id-input-password" type="password" placeholder="请输入密码">
+                        <img class="icon-image img-password" src="./static/imgs/lock.png" alt="密码">
+                        <button id="id-button-submit">提交</button>
+                    </div>
+                </div>
+
+                <div class="music-selector">
+
+                    <div class="music-selector-child search-box">
+                        <input class="input-box" id="id-input-search" type="text">
+                        <img id="id-img-search" class="search-selector-button icon-image" src="./static/imgs/search.png" alt="">
+                    </div>
+
+                    <div class="music-selector-child ilike-box">
+                        <img class="icon-image img-ilike" src="./static/imgs/ilike.png" alt="ilike">
+                        <span class="ilike-selector-button">
+                            我喜欢的音乐
+                        </span>
+                        <img class="icon-image img-collection" src="./static/imgs/collection.png" alt="collection">
+                        <span class="collection-selector-button">
+                            自定义歌单
+                        </span>
+                    </div>
+
+                </div>
+
+                <div class="play-area">
+                    <audio class="audio-tags" src=''>
+                    </audio>
+                    <!-- <button id="id-button-play">播放</button> -->
+                    <!-- <button id="id-button-pause">暂停</button> -->
+                    <img src="./static/imgs/play.png" class="icon-image img-play img-active" id="id-button-play">
+                    <img src="./static/imgs/pause.png" class="icon-image img-pause" id="id-button-pause">
+                    <img src="./static/imgs/up.png" class="icon-image img-up" id="id-button-up">
+                    <img src="./static/imgs/down.png" class="icon-image img-down" id="id-button-down">
+                    <img class="icon-image img-lyric" id="id-button-lyric" src="./static/imgs/lyric.png" alt="">
+                    <div class="progress-box">
+                        <div class="progress-border"></div>
+                        <div class="progress-bar">
+                            <div class="progress-content"></div>
+                            <div class="progress-btn"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-area">
+
+                <div id="id-div-search" class="detail-area">
+                    <ol class="result-display-cell search-display-cell">
+                        <span class="music-name name-title">音乐标题</span>
+                        <span class="music-singer signer-title">歌手</span>
+                    </ol>
+                </div>
+
+                <div id="id-div-ilike" class="detail-area">
+                    <ol class="result-display-cell ilike-display-cell">
+                        <span class="music-name name-title">音乐标题</span>
+                        <span class="music-singer signer-title">歌手</span>
+                    </ol>
+                </div>
+
+                <div id="id-div-lyrics" class="detail-area detail-area-active">
+                    <div class="result-display-cell lyric-display-cell">
+                        <div id="id-div-lyric">
+                            <img class="lyric-list img-lyricbox" src="./static/imgs/lyricbox.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="bottom-area">
+                <div class="play-area">
+                    <audio class="audio-tags" controls="controls"  src=''>
+                    </audio>
+                    <button id="id-button-play">播放</button>
+                    <button id="id-button-pause">暂停</button>
+                    <img class="icon-image img-lyric" id="id-button-lyric" src="./static/imgs/lyric.png" alt="">
+                </div>
+            </div> -->
+        </div>
+        <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script>
+        <script src="./utility.js" charset="utf-8"></script>
+        <script src="./userInfo.js" charset="utf-8"></script>
+        <script src="./playListInfo.js" charset="utf-8"></script>
+        <script src="./progressBar.js" charset="utf-8"></script>
+
+
+
+
+    </body>
+</html>
